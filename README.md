@@ -14,18 +14,18 @@ cargo install cargo-watch
 		```sh
 			cargo watch -i lib -x "run --features reload"
 		```
-	    - will watch for changes to the binary of the project
+	    - will watch for changes to the main.rs file. 
 
 	- the terminal that is building the library module for hot reloading
-	functions
+	functions.
 		```sh
 			cargo watch -w lib -x 'build -p lib'
 		```
 
 	- make a change to the anything in the library file
-	and the second terminal will rebuild the library
+	and the second terminal will rebuild the library.
 	- and the first terminal will hot reload the library without
-	interrupting the running executable and dynamically load the new library
+	interrupting the running executable and dynamically load the new library.
 
 	- however, if anything was changed in the main file running in that terminal process
-	this will rebuild the entire project again
+	this will rebuild the entire project again.
